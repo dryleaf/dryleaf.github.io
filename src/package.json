@@ -5,8 +5,9 @@
 
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
+    "export": "next export",
     "postbuild": "cp -a out/. ../build && touch ../build/.nojekyll"
   },
   "dependencies": {
