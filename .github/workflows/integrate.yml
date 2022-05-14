@@ -25,8 +25,8 @@ jobs:
           node-version: 12
           cache: npm
           cache-dependency-path: ${{ github.workspace }}/src/package-lock.json
-      - run: npm install
-      - run: npm run build
+      - run: yarn install
+      - run: yarn build
         env:
             CI: true
 
