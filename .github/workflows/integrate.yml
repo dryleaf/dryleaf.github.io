@@ -13,24 +13,33 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Cache  💾
-        uses: actions/cache@v2
-        with:
-          path: ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+      #- name: Cache  💾
+      #  uses: actions/cache@v2
+      #  with:
+      #    path: ${{ github.workspace }}/.next/cache
+      #    key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+      strategy:
+        matrix:
+          node-version: [14.x]
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Setup node 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         uses: actions/setup-node@v2
         with:
-          node-version: 12
-      - run: npm ci
-      - run: npm install
-      - run: npm run build
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      
+      - name: Build
+        run: |
+          npm ci
+          npm install
+          npm run build
+          npm run export
+          touch ./out/.nojekyll
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
+          #CLEAN: true # Automatically remove deleted files from the deploy branch
