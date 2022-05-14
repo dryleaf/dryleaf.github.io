@@ -1,0 +1,21 @@
+{
+  "name": "dryleaf.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd src && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dryleaf/dryleaf.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dryleaf/dryleaf.github.io/issues"
+  },
+  "homepage": "https://github.com/dryleaf/dryleaf.github.io#readme",
+  "dependencies": {}
+}
