@@ -60,7 +60,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/dryleaf" alt="dryleaf logo" width={72} height={16} />
+            <Image src="/dryleaf.jpg" alt="dryleaf logo" width={72} height={16} />
           </span>
         </a>
       </footer>
