@@ -13,6 +13,11 @@
 /out/
 /build/
 
+## gh pages config
+_config.yml
+index.html
+
+
 # production
 /build
 
