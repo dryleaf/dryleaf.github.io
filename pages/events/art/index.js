@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Image src="/poster.jpg" alt="Ethiopian Tribes Poster" />
+        <Image src="/poster.jpg" alt="Ethiopian Tribes Poster" layout='fill' objectFit='contain' />
       </main>
 
       <footer className={styles.footer}>
