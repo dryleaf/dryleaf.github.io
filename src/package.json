@@ -8,7 +8,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "postbuild": "cp -a out/. ../build && touch ../build/.nojekyll"
+    "postbuild": "cp -a out/. ../build && touch ../build/.nojekyll && echo 'www.dryleaf.io' > ./build/CNAME"
   },
   "dependencies": {
     "next": "^11.1.3",
