@@ -1,55 +1,34 @@
 export const photos=[
   {
-    name:"Old tree on Beach",
-    url:"beach-wood.jpg"
+    name:"Autumn in Meiji Jungu Gaien",
+    url:"meiji-jingu-gaien-nikoniko-park.jpg"
   },
    {
-    name:"Beas River Stone",
-    url:"beas-river-stone.jpg"
+    name:"Stones beside the River",
+    url:"stones-beside-the-river.jpg"
   },
    {
-    name:"Floating Restaurant",
-    url:"floating-restaurant.jpg"
+    name:"Shiraitono Falls Cracking Ice",
+    url:"cracking-ice-bubbles-underneath-shiraitono-falls.jpg"
   },
    {
-    name:"Hadimba Devi Temple",
-    url:"hadimba-devi.jpg"
+    name:"Inokashira Park Pond",
+    url:"inokashira-park.jpg"
   },
      {
-    name:"Mountain Yak",
-    url:"mountain-yak.jpg"
+    name:"Kawaguchi-ko Music Forest",
+    url:"kawaguchi-ko-music-forest.jpg"
   },
   {
-    name:"Jatayu sculpture at Kerala",
-    url:"eagle.jpg"
+    name:"Mount Fuji",
+    url:"mount-fuji.jpg"
   },
   {
-    name:"Manali Hill Range",
-    url:"manali-hill-range-blue.jpg"
+    name:"Temple in route to Mt. Ishiwari",
+    url:"temple-in-route-to-mt-ishiwari.jpg"
   },
   {
-    name:"Manali Hills",
-    url:"manali-hills.jpg"
+    name:"Shrine Zuijinmon Shrine",
+    url:"zuijinmon-shrine.jpg"
   },
-  {
-    name:"Old Tractor on Beach",
-    url:"old-tractor.jpg"
-  },
-  {
-    name:"A rich Green Paddy Field",
-    url:"paddy-field-green.jpg"
-  },
-  {
-    name:"Pondicherry",
-    url:"pondicherry.jpg"
-  },
-  {
-    name:"Thiruparappu falls",
-    url:"thiruparappu-falls.jpg"
-  },
-  {
-    name:"Snow Mountains at Manali",
-    url:"snow-mountain.jpg"
-  },
-
 ];
