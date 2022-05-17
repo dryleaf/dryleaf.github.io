@@ -1,2 +1,2 @@
-## Dependencies
-- **Reference**: https://github.com/abhipatel7/next-js-demo-with-test-case-storybook-redux-material-ui/blob/main/package.json
+## Overview
+Personal portfolio site, hobbies and blog. This repository is used to publish content on [dryleaf.io](https://dryleaf.io).
