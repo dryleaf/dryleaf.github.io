@@ -2,9 +2,9 @@
 export const cdnImage = (name, placeholder,folder='/photography',count=10) => {
   if (process.env.NODE_ENV === "production") {
     if (placeholder) {
-      return "https://cdn.statically.io/img/naveenda.github.io/h="+count+"/"+folder+"/"+name;
+      return "https://cdn.statically.io/img/dryleaf.github.io/h="+count+"/"+folder+"/"+name;
     } else {
-      return "https://cdn.statically.io/img/naveenda.github.io/f=auto/"+folder+"/"+name;
+      return "https://cdn.statically.io/img/dryleaf.github.io/f=auto/"+folder+"/"+name;
     }
   } else {
     return folder+"/" + name;
