@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     name: "todo-list",
-    description: "This is a simple todo list web app. Uses browser storage to persist data. Featured in 'The Artic Code Vault🧊'.",
+    description: "This is a simple todo list web app. Uses browser storage to persist data. Featured in 'The Artic Code Vault'.",
     repo: "https://github.com/dryleaf/todo-list",
     tags: ["HTML", "CSS", "JavaScript"],
   },

@@ -10,7 +10,7 @@ export default function Blog() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <p>Comming soon! (*^_^*)</p>
+        <p>Coming soon! (*^_^*)</p>
       </main>
     </div>
   )
