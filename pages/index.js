@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import Head from "next/head";
+import { cdnImage } from "../components/utils";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 import styles from '../styles/Home.module.css'
@@ -21,7 +22,7 @@ export default function Home() {
             <div className="col">
               <Fade left>
                 <div className="profile-image">
-                  <img src={"/josimar-profile.jpg"} alt="Photo of Josimar Lopes"/>
+                  <img src={cdnImage("josimar-profile.jpg", false, "")} alt="Photo of Josimar Lopes"/>
                 </div>
                 <h1>Hi,</h1>
                 <h1>I'm Josimar Lopes</h1>
