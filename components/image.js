@@ -1,11 +1,9 @@
 import React from "react";
 import { usePalette } from "react-palette";
-import { cdnImage } from "../components/utils";
 
 const Image = (props) => {
-  const { data, loading, error } = usePalette(
-    cdnImage(props.src, true, "/photography", 40)
-  );
+
+  const { data, loading, error } = usePalette(props.src);
 
   return (
     <>

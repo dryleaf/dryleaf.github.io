@@ -6,7 +6,7 @@ import {
 } from "react-lazy-load-image-component";
 import { photos } from "../data/photos";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { cdnImage, shuffle } from "../components/utils";
+import { shuffle } from "../components/utils";
 import Image from "../components/image";
 import Fade from "react-reveal/Fade";
 
@@ -62,11 +62,11 @@ const Photography = ({ scrollPosition }) => {
             <Fade bottom key={item.url}>
               <Image src={item.url} name={item.name}>
                 <LazyLoadImage
-                  src={cdnImage(item.url)}
+                  src={item.url}
                   alt={item.name}
                   scrollPosition={scrollPosition}
                   effect="black-and-white"
-                  placeholderSrc={cdnImage(item.url, true)}
+                  placeholderSrc={item.url}
                 />
               </Image>
             </Fade>

@@ -1,5 +1,5 @@
 // prettier-ignore
-export const cdnImage = (name, placeholder,folder='/photography',count=10) => {
+/*export const cdnImage = (name, placeholder,folder='/photography',count=10) => {
   if (process.env.NODE_ENV === "production") {
     if (placeholder) {
       return "https://cdn.statically.io/img/dryleaf.github.io/h="+count+"/"+folder+"/"+name;
@@ -9,7 +9,7 @@ export const cdnImage = (name, placeholder,folder='/photography',count=10) => {
   } else {
     return folder+"/" + name;
   }
-};
+};*/
 
 export const shuffle = (array) => {
   array = [...array];
