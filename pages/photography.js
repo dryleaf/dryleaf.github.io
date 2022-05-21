@@ -62,6 +62,8 @@ const Photography = ({ scrollPosition }) => {
             <Fade bottom key={item.url}>
               <ImageCard src={item.url} name={item.name}>
                 <LazyLoadImage
+                  name={item.name}
+                  title={item.name}
                   src={cdnImage(item.url)}
                   alt={item.name}
                   scrollPosition={scrollPosition}

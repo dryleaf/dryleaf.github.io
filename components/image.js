@@ -1,14 +1,11 @@
 import React from "react";
 import { usePalette } from "react-palette";
 import { cdnImage } from "../components/utils";
-import Link from "next/link";
 
 const ImageCard = (props) => {
   const { data, loading, error } = usePalette(
     cdnImage(props.src, true, "/photography", 40)
   );
-
-  console.log("props.src:: ", props.src);
 
   return (
     <>
@@ -32,12 +29,7 @@ const ImageCard = (props) => {
           </div>
           <div className="name">{props.name}</div>
         </div>
-        <Link
-          className="image"
-          href={cdnImage(props.src, true, "/photography", 40)}
-          title={props.name} >
-            {props.children}
-        </Link>
+        <div className="image">{props.children}</div>
       </div>
       <style jsx>{`
         .img-wrapper {
