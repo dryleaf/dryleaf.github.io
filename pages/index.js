@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import Head from "next/head";
+import Image from "next/image";
 import { cdnImage } from "../components/utils";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
@@ -22,7 +23,11 @@ export default function Home() {
             <div className="col">
               <Fade left>
                 <div className="profile-image">
-                  <img src={cdnImage("josimar-profile.jpg", false, "")} alt="Photo of Josimar Lopes"/>
+                  <Image
+                    src={cdnImage("josimar-profile.jpg", false, "")}
+                    alt="Photo of Josimar Lopes"
+                    width={263}
+                    height={350} />
                 </div>
                 <h1>Hi,</h1>
                 <h1>I'm Josimar Lopes</h1>
@@ -42,7 +47,11 @@ export default function Home() {
                 <div className="icons">
                 <Bounce delay={1000}>
                     <a href="https://giter.site/dryleaf" target="_blank" rel="noopener noreferrer">
-                      <img src="https://giter.site/assets/img/logo.svg" alt="giter logo" width="16" height="16" />
+                    <Image
+                      src={"https://giter.site/assets/img/logo.svg"}
+                      alt="giter logo"
+                      width={16}
+                      height={16} />
                     </a>
                   </Bounce>
                   <Bounce delay={1000}>

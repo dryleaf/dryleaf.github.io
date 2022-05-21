@@ -9,7 +9,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href={"/favicon-light.png"} type="image/png" />
+          <link rel="icon" href={"/favicon.ico"} />
           <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
