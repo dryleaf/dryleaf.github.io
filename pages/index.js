@@ -33,19 +33,20 @@ export default function Home() {
                 <h1>I'm Josimar Lopes</h1>
                 <p className="info">
                   <span>
-                  Determined, smart and competent individual, familiarized with team and individual work, who desires to consolidate his experience in Software · System engineering.
+                  I am a professional Engineer who likes to solve problems. I have been described as a determined, smart and competent individual, familiarized with team and individual work, who desires to consolidate his experience in the areas of software, system and cloud engineering.
                   </span>
                   <br /><br />
                   <ul style={{ lineHeight: '30px' }}>
-                    <li>Over 9+ years of experience as Full‑stack, SRE and DevOps.</li>
+                    <li>A professional Engineer with over 9+ years of experience in Full‑stack, DevOps and ICT.</li>
+                    <li>Extensive experience in WCDMA, LTE & NR RAN products and verification solutions.</li>
                     <li>Extensive experience on web applications development.</li>
                     <li>Extensive experience in API Design and Development.</li>
                     <li>Extensive experience in several programming languages, including Java, Python and JavaScript Frameworks.</li>
-                    <li>Holder of a Master degree in Information Engineering, with a background in Computer Science.</li>
+                    <li>Holder of Master degree in Information Engineering, with a background in Computer Science.</li>
                   </ul>
                 </p>
                 <div className="icons">
-                <Bounce delay={1000}>
+                  <Bounce delay={1000}>
                     <a href="https://giter.site/dryleaf" target="_blank" rel="noopener noreferrer">
                     <Image
                       src={"https://giter.site/assets/img/logo.svg"}
