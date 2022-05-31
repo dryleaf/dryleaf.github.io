@@ -39,7 +39,7 @@ export default function Home() {
                   <ul style={{ lineHeight: '30px' }}>
                     <li>A professional Engineer with over 9+ years of experience in Full‑stack, DevOps and ICT.</li>
                     <li>Extensive experience in WCDMA, LTE & NR RAN products and verification solutions.</li>
-                    <li>Extensive experience on web applications development.</li>
+                    <li>Extensive experience in web applications development.</li>
                     <li>Extensive experience in API Design and Development.</li>
                     <li>Extensive experience in several programming languages, including Java, Python and JavaScript Frameworks.</li>
                     <li>Holder of Master degree in Information Engineering, with a background in Computer Science.</li>
