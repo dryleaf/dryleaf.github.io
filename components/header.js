@@ -11,7 +11,7 @@ const Header = (props) => {
     <>
       <header>
         <div className="logo">
-        <Link href="/"><img src="/dryleaf-logo.jpg" /></Link>
+        <Link href="/"><img src="/dryleaf-logo.jpg" alt="dryleaf logo" /></Link>
         </div>
         <ul className="links">
           <li className={router.pathname == "/" ? "active" : ""}>
