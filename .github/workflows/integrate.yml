@@ -67,7 +67,14 @@ jobs:
       - name: fetch files
         run: |
           cd ./public
-          find . -maxdepth 2 -type f | sed -e "s/.//" | sort > .updated_files
+          # allow grep to fail
+          set +e
+          FILES=$(find . -maxdepth 2 -type f | sed -e "s/.//" | grep -e '\.jpg$')
+          set -e
+          [ -z "$FILES" ] && touch .updated_files && exit 0
+          for file in $FILES; do
+            echo $file
+          done | sort | uniq | tr '\n' ' ' > .updated_files
           cat .updated_files
       
       - name: Invalidate CloudFront
