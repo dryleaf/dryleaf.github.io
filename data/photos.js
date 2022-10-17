@@ -34,5 +34,9 @@ export const photos=[
   {
     name: "Miniature houses in Motomachi area gardens, 2022/05/22",
     url: "miniature-houses-in-motomachi-area-gardens.jpg"
+  },
+  {
+    name: "Sunset, rural area in Maputo, Mozambique, 2022/07/17",
+    url:"sunset-seen-from-rural-area-in-maputo-mozambique.jpg"
   }
 ];
