@@ -50,37 +50,19 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION_NAME }}
-      
-      - name: get updated files
-        run: |
-          # allow grep to fail
-          set +e
-          FILES=$(git log --stat="1000" -1 | grep '|' | sed -e "s/public/./" | awk '{print $1}' | grep -e '\.jpg$')
-          set -e
-          cd ./public
-          for file in $FILES; do
-            echo $file
-            aws s3 cp $file s3://${{ secrets.AWS_S3_BUCKET_NAME }}
-          done
 
-      #- name: Sync to S3
-      #  run: |
-      #    cd ./public
-      #    aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET_NAME }}
+      - name: Sync to S3
+        run: |
+          cd ./public
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET_NAME }}
   invalidate-cloudfront-cache:
     runs-on: ubuntu-latest
 
     steps:
-      - name: get updated files
+      - name: fetch files
         run: |
-          # allow grep to fail
-          set +e
-          FILES=$(git log --stat="1000" -1 | grep '|' | sed -e "s/public//" | awk '{print $1}' | grep -e '\.jpg$')
-          set -e
-          [ -z "$FILES" ] && touch .updated_files && exit 0
-          for file in $FILES; do
-            echo $file
-          done | sort | uniq | tr '\n' ' ' > .updated_files
+          cd ./public
+          find . -maxdepth 2 -type f | sed -e "s/.//" | sort > .updated_files
           cat .updated_files
       
       - name: Invalidate CloudFront
