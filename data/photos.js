@@ -31,4 +31,8 @@ export const photos=[
     name:"Shrine Zuijinmon Shrine, 2021/12/31",
     url:"zuijinmon-shrine.jpg"
   },
+  {
+    name: "Miniature houses in Motomachi area gardens, 2022/05/22",
+    url: "miniature-houses-in-motomachi-area-gardens.jpg"
+  }
 ];
