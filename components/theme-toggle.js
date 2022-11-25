@@ -39,8 +39,8 @@ const ToggleButton = () => {
         .toggleWrapper {
           position: absolute;
           display: inline;
-          right: 18px;
-          top: -6px;
+          right: 45px;
+          top: 5px;
           width: 40px;
           transform: scale(0.5);
         }

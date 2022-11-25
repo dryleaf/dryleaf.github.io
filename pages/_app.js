@@ -1,9 +1,5 @@
-import { useEffect } from 'react';
-import Header from '../components/header';
-import { ThemeProvider } from 'next-themes';
-import Footer from "../components/footer";
-
 import '../styles/globals.css';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -12,13 +8,7 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
-  return (
-    <ThemeProvider>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </ThemeProvider>
-  )
+  return <Component {...pageProps} />;
 }
 
 export default MyApp

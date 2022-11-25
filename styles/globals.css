@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-*,
+/**,*/
 *:before,
 *:after {
   box-sizing: inherit;
@@ -12,17 +12,20 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans" !important;
   background-color: var(--background);
   overflow-x: hidden;
   color: var(--text-color);
   transition: background-color 200ms, color 200ms;
 }
 
-
 body,
 [data-theme='light'],
-[data-theme='light'] body {
+[data-theme='light'] body
+.light,
+.light body {
+  background-color: #fafbfc !important;
+  color: #2e302f !important;
   --background: #fafbfc;
   --text-color: rgba(0, 0, 0, 0.87);
   --link: #3182ce;
@@ -44,7 +47,11 @@ body,
 }
 
 [data-theme='dark'],
-[data-theme='dark'] body {
+[data-theme='dark'] body
+.dark,
+.dark body {
+  background-color: #1a202c !important;
+  color: #bcbcbc !important;
   --background: #1a202c;
   --text-color: #bcbcbc;
   --color: #f7fafc;
@@ -62,7 +69,55 @@ body,
   --quote-bg:#343434;
   --quote-shadow:none;
   --photo-text:#bcbcbc;
+}
 
+.featured-topics {
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.featured-topics a,
+.nextra-search input,
+.light .light\:bg-white,
+.light .sticky,
+.light body .sticky,
+[data-theme='light'] body .sticky {
+  background: #fafbfc !important;
+  color: #2e302f;
+}
+
+.dark .featured-topics a,
+.dark .nextra-search input,
+.dark .dark\:bg-dark,
+.dark .sticky,
+.dark body .sticky,
+[data-theme='dark'] body .sticky {
+  background: #1a202c !important;
+  color: #f7fafc;
+}
+
+.dark .sticky,
+.dark body .sticky,
+.dark .dark\:border-gray-900 {
+  box-shadow: 0 2px 4px rgba(0,0,0,.02);
+  border-color: #68758e66 !important;
+}
+
+.dark hr {
+  border: 1px solid #68758e66 !important;
+}
+
+.light .sticky,
+.light body .sticky,
+.light .light\:border-gray-900 {
+  box-shadow: 0 2px 4px rgba(0,0,0,.02);
+  border-color: #eff3f8;
+}
+
+.light header .links li a {
+  color: #2e302f;
+}
+.dark header .links li a {
+  color: #f7fafc;
 }
 
 @media only screen and (max-width: 600px) {
@@ -93,12 +148,12 @@ Home Page
 .profile-image {
   margin-bottom: 20px;
 }
-.dark .profile-image img {
-  opacity: 0.3;
-}
 
 .icons {
   margin: 25px auto;
+}
+.icons > div {
+  display: inline-block;
 }
 .icons a {
   color: var(--color) !important;
@@ -128,6 +183,11 @@ Home Page
   text-align: center;
   width: 100%;
 }
+.container .experience {
+  list-style: inherit;
+  margin: inherit;
+  padding: 0 0 0 40px;
+}
 .projects {
   display: flex;
   flex-flow: wrap;
@@ -149,7 +209,9 @@ Home Page
   background-color: var(--card-bg);
   border-radius: 16px;
   box-shadow: var(--card-boxshadow);
+  font-size: 14px;
 }
+.featured-topics:hover,
 .card > div:hover {
   background: var(--card-bg-hover);
   transition: background-color 100ms linear;
@@ -209,19 +271,21 @@ Home Page
 /** Header **/
 header {
   height: 45px;
-  line-height: 45px;
   display: flex;
-  padding: 0 2%;
+}
+header::before, header::after {
+  box-sizing: inherit !important;
 }
 header .logo {
   flex: 0 200px;
   font-family: "Engagement", cursive;
-  /*padding-left: 45px;*/
   font-size: 22px;
   cursor: pointer;
+  display: inline-block;
 }
 header .logo img {
   height: 38px;
+  max-width: 38px;
   vertical-align: bottom;
 }
 header .links {
@@ -229,8 +293,11 @@ header .links {
   padding-right: 45px;
   padding-left: 0;
   text-align: right;
-  position: relative;
   white-space: nowrap;
+  display: inline-block;
+  margin: 0;
+  height: 45px;
+  padding: 5px 0 0 0;
 }
 header .links ul {
   list-style-type: none;
@@ -239,7 +306,7 @@ header .links ul {
   margin-top: 0;
 }
 header .links li {
-  display: inline;
+  display: inline-grid;
   padding-left: 12px;
 }
 
@@ -309,7 +376,6 @@ header .logo img {
 }
 .lazy-load-image-background > img{
   width:100%;
-  /* min-height: 500px; */
 }
 
 .scrollTop {
@@ -345,4 +411,11 @@ header .logo img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+footer .text-gray-600 {
+  width: 100%;
+}
+footer .text-gray-600 footer {
+  display: inline;
 }

@@ -15,7 +15,7 @@
 .footer {
   display: block;
   padding: 1rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #64616133;
   justify-content: center;
   align-items: center;
 }
@@ -25,12 +25,15 @@
 }
 
 .footer p a {
+  color: inherit;
   display: inline-block;
   text-align: center;
   padding: 0 10px;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  text-decoration: inherit;
+  text-underline-position: inherit;
 }
 
 .title a {

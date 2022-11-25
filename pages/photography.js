@@ -8,7 +8,8 @@ import { photos } from "../data/photos";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { cdnImage, shuffle } from "../components/utils";
 import ImageCard from "../components/image";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";//"react-reveal/Fade";
+import Layout from '../components/default-theme';
 
 const Photography = ({ scrollPosition }) => {
   const [showScroll, setShowScroll] = useState(false);
@@ -31,7 +32,7 @@ const Photography = ({ scrollPosition }) => {
   }, []);
 
   return (
-    <>
+    <Layout>
       <Head>
         <title>Photography by Josimar Lopes</title>
         <meta name="description" content="Photography | Josimar Lopes is an aspiring photographer, in his free time he likes to take pictures." />
@@ -41,7 +42,7 @@ const Photography = ({ scrollPosition }) => {
         <div className="row">
           <div className="col">
             <h1>Photography</h1>
-            <blockquote>
+            <blockquote style={{margin: '16px 40px', padding: '5px'}}>
               <p>A glimpse of time, a memory, and a moment, forever captured and preserved.</p>
             </blockquote>
           </div>
@@ -82,7 +83,7 @@ const Photography = ({ scrollPosition }) => {
           <i className="fa fa-arrow-up"></i>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 export default trackWindowScroll(Photography);

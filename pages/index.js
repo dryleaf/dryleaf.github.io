@@ -2,12 +2,13 @@ import { projects } from "../data/projects";
 import Head from "next/head";
 import Image from "next/image";
 import { cdnImage } from "../components/utils";
-import Fade from "react-reveal/Fade";
-import Bounce from "react-reveal/Bounce";
+import { Fade, Bounce } from "react-awesome-reveal";
 import styles from '../styles/Home.module.css'
+import Layout from "../components/default-theme"
 
 export default function Home() {
   return (
+    <Layout>
     <div className={styles.container}>
       <Head>
         <title>Josimar Lopes Portfolio</title>
@@ -36,7 +37,7 @@ export default function Home() {
                   I am a professional Engineer who likes to solve problems. I have been described as a determined, smart and competent individual, familiarized with team and individual work, who desires to consolidate his experience in the areas of software, system and cloud engineering.
                   </span>
                   <br /><br />
-                  <ul style={{ lineHeight: '30px' }}>
+                  <ul className="experience" style={{ lineHeight: '30px' }}>
                     <li>A professional Engineer with over 9+ years of experience in Full‑stack, DevOps and ICT.</li>
                     <li>Extensive experience in WCDMA, LTE & NR RAN products and verification solutions.</li>
                     <li>Extensive experience in web applications development.</li>
@@ -101,5 +102,6 @@ export default function Home() {
         </div>
       </main>
     </div>
+    </Layout>
   );
 }
