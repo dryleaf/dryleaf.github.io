@@ -7,7 +7,7 @@ export default function NextraTheme(pageProps) {
 	const title = pageProps?.route?.replace(/\//g, " ").trim();
 
 	const NextraPage = nextra(pageProps, {
-		github: 'https://github.com/dryleaf',
+		github: '',
 		docsRepositoryBase: 'https://github.com/dryleaf/dryleaf.github.io/blob/master',
 		logo: (<Header isToggleDisabled={true}/>),
 		head: (
