@@ -311,7 +311,7 @@ header .links li {
 }
 
 header .links li a {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color);
   text-decoration: none !important;
   background: linear-gradient(to right, #00d1b1 0%, #278fc6 98%);
@@ -337,7 +337,7 @@ header .logo img {
     flex: 0 calc(100vw - 200px);
   }
   header .links li a {
-    font-size: 9px;
+    font-size: 10px;
   }
 .img-wrapper .name{
   display:none !important;
