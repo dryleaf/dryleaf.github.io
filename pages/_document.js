@@ -22,6 +22,7 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="8CYV4Oyz865mIuy-fi8ERPZBOxhznQKaKWCn9CDcgPE"
           />
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1325330735397854" crossorigin="anonymous"></script>
         </Head>
         <body>
           <Main />
