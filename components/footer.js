@@ -26,6 +26,11 @@ const Footer = (props) => {
           Powered by dryleaf | { new Date().getFullYear() }
         </a>
       </p>
+      <p className={styles.privacyPolicy}>
+        <a href="/privacy-policy" rel="noopener noreferrer">
+          Privacy Policy
+        </a>
+      </p>
     </footer>
   );
 };
