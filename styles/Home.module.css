@@ -34,7 +34,7 @@
 }
 
 .footer .privacyPolicy {
-  text-align: right;
+  text-align: center;
   padding: 0 20px;
 }
 
@@ -134,8 +134,5 @@
   .grid {
     width: 100%;
     flex-direction: column;
-  }
-  .footer p.privacyPolicy {
-    text-align: center;
   }
 }
