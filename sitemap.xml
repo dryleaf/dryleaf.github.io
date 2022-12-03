@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dryleaf.io</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://dryleaf.io/photography</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://dryleaf.io/privacy-policy</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://dryleaf.io/blog</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://dryleaf.io/blog/life/bucket-list</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://dryleaf.io/blog/life/stoic-journal</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://dryleaf.io/blog/coding/graph/adjacency-map-graph</loc>
+    <lastmod>2022-12-03</lastmod>
+  </url>
+</urlset>
