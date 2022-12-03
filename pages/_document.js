@@ -11,10 +11,13 @@ class MyDocument extends Document {
         <Head>
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYZDF1YELD"></script>
           <script>
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            
             gtag('config', 'G-QYZDF1YELD');
+          `}
           </script>
           <link rel="icon" href={"/favicon.ico"} />
           <link
