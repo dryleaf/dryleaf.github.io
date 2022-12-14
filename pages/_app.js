@@ -1,14 +1,18 @@
 import '../styles/globals.css';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    window.onbeforeunload = () => {
-      window.scrollTo(0, 0);
+    if (!mounted) {
+      window.onbeforeunload = () => {
+        window.scrollTo(0, 0);
+      }
     }
+    setMounted(true)
   }, []);
 
-  return <Component {...pageProps} />;
+  return mounted && <Component {...pageProps} />;
 }
 
 export default MyApp

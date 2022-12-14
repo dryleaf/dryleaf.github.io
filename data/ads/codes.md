@@ -13,3 +13,17 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 ```
+
+```
+<ins className="adsbygoogle"
+        style={{display: 'block'}}
+        data-ad-format="fluid"
+        data-ad-layout-key="-hb-13+2b-6v+d1"
+        data-ad-client="ca-pub-1325330735397854"
+        data-ad-slot="3040720050"></ins>
+      <Script strategy="lazyOnload">
+      {`
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      `}
+      </Script>
+```

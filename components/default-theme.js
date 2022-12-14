@@ -2,6 +2,7 @@
 import Header from './header';
 import { ThemeProvider } from 'next-themes';
 import Footer from "./footer";
+import StickyBottom from "./sticky-bottom";
 
 export default function DefaultTheme (pageProps) {
   return (
@@ -9,6 +10,7 @@ export default function DefaultTheme (pageProps) {
       <Header />
       {pageProps.children}
       <Footer />
+      <StickyBottom />
     </ThemeProvider>
   )
 }

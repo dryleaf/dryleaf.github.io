@@ -8,10 +8,12 @@ import { photos } from "../data/photos";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { cdnImage, shuffle } from "../components/utils";
 import ImageCard from "../components/image";
-import { Fade } from "react-awesome-reveal";//"react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import Layout from '../components/default-theme';
 
-const Photography = ({ scrollPosition }) => {
+const Photography = ({ scrollPosition }, props) => {
+  console.log(props);
+  const [mounted, setMounted] = useState(false);
   const [showScroll, setShowScroll] = useState(false);
   const [listOfPhotos, showlistOfPhotos] = useState([]);
   const scrollTop = () => {
@@ -25,10 +27,11 @@ const Photography = ({ scrollPosition }) => {
     }
   };
   useEffect(() => {
-    if (process.browser) {
+    if (!mounted) {
       window.addEventListener("scroll", checkScrollTop);
     }
     showlistOfPhotos(shuffle(photos));
+    setMounted(true);
   }, []);
 
   return (
