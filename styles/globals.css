@@ -146,11 +146,11 @@ Home Page
   opacity: 1;
 }
 .profile-image {
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .icons {
-  margin: 25px auto;
+  text-align: center;
 }
 .icons > div {
   display: inline-block;
@@ -158,7 +158,7 @@ Home Page
 .icons a {
   color: var(--color) !important;
   padding-left: 12px;
-  font-size: 18px;
+  font-size: 22px;
 }
 .info {
   padding: 12px 5px;
@@ -176,6 +176,12 @@ Home Page
 }
 .col {
   flex: 0 50%;
+}
+.col-1 {
+  flex: 0 40%;
+}
+.col-2 {
+  flex: 0 60%;
 }
 .intro {
   font-style: italic;
@@ -257,7 +263,9 @@ Home Page
   .row {
     flex-wrap: wrap;
   }
-  .col {
+  .col,
+  .col-1,
+  .col-2 {
     flex: 0 100%;
   }
   .projects {

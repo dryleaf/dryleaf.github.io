@@ -21,16 +21,47 @@ export default function Home() {
               <p className="intro">“The successful warrior is the average man, with laser-like focus.” — Bruce Lee</p>
             </div>
             <div className="row">
-              <div className="col">
+              <div className="col-1">
                 <Fade left>
                   <div className="profile-image">
                     <Image
-                      src={cdnImage("josimar-profile.jpg", false, "")}
+                      src={cdnImage("josimar-profile-3.jpg", false, "")}
                       alt="Photo of Josimar Lopes"
                       width={263}
                       height={350} />
                   </div>
-                  <h1>Hi,</h1>
+                  <div className="icons">
+                    <Bounce delay={500}>
+                      <a href="https://github.com/dryleaf" target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-github" aria-hidden="true" title="github logo"></i>
+                      </a>
+                    </Bounce>
+                    <Bounce delay={500}>
+                      <a href="https://stackoverflow.com/users/6376299/dryleaf" target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-stack-overflow" aria-hidden="true" title="stackoverflow logo"></i>
+                      </a>
+                    </Bounce>                    
+                    <Bounce delay={500}>
+                      <a href="skype:jossylopes" target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-skype" aria-hidden="true" title="skype logo"></i>
+                      </a>
+                    </Bounce>
+                    <Bounce delay={500}>
+                      <a href="https://www.linkedin.com/in/lopesjosimar/" target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-linkedin-square" aria-hidden="true" title="linkedin logo"></i>
+                      </a>
+                    </Bounce>
+                    <Bounce delay={500}>
+                      <a href="https://giter.site/dryleaf" target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={"https://giter.site/assets/img/logo.svg"}
+                        alt="giter logo"
+                        width={20}
+                        height={20} />
+                      </a>
+                    </Bounce>
+                  </div>
+                  <h1 style={{marginTop: 0}}>Hi,</h1>
                   <h1>I'm Josimar Lopes</h1>
                   <div className="info">
                     <span>
@@ -46,40 +77,9 @@ export default function Home() {
                       <li>Holder of Master degree in Information Engineering, with a background in Computer Science.</li>
                     </ul>
                   </div>
-                  <div className="icons">
-                    <Bounce delay={1000}>
-                      <a href="https://giter.site/dryleaf" target="_blank" rel="noopener noreferrer">
-                      <Image
-                        src={"https://giter.site/assets/img/logo.svg"}
-                        alt="giter logo"
-                        width={16}
-                        height={16} />
-                      </a>
-                    </Bounce>
-                    <Bounce delay={1000}>
-                      <a href="https://stackoverflow.com/users/6376299/dryleaf" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-stack-overflow" aria-hidden="true" title="stackoverflow logo"></i>
-                      </a>
-                    </Bounce>
-                    <Bounce delay={1000}>
-                      <a href="https://github.com/dryleaf" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-github" aria-hidden="true" title="github logo"></i>
-                      </a>
-                    </Bounce>
-                    <Bounce delay={1000}>
-                      <a href="skype:jossylopes" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-skype" aria-hidden="true" title="skype logo"></i>
-                      </a>
-                    </Bounce>
-                    <Bounce delay={1000}>
-                      <a href="https://www.linkedin.com/in/lopesjosimar/" target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-linkedin-square" aria-hidden="true" title="linkedin logo"></i>
-                      </a>
-                    </Bounce>
-                  </div>
                 </Fade>
               </div>
-              <div className="col">
+              <div className="col-2">
                 <div className="projects">
                   {projects.map((item) => (
                     <Fade bottom key={item.name}>
