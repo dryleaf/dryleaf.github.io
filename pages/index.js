@@ -27,8 +27,8 @@ export default function Home() {
                     <Image
                       src={cdnImage("josimar-profile-3.jpg", false, "")}
                       alt="Photo of Josimar Lopes"
-                      width={263}
-                      height={350} />
+                      width={280}
+                      height={325} />
                   </div>
                   <div className="icons">
                     <Bounce delay={500}>
