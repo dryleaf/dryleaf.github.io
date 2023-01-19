@@ -147,7 +147,7 @@ Home Page
 }
 .profile-image {
   text-align: center;
-  height: 323px;
+  height: 333px;
 }
 
 .icons {
@@ -158,7 +158,7 @@ Home Page
 }
 .icons a {
   color: var(--color) !important;
-  padding-left: 12px;
+  padding-left: 20px;
   font-size: 22px;
 }
 .info {
