@@ -168,7 +168,7 @@ Home Page
 }
 
 .container {
-  width: 100%;
+  max-width: 1024px;
   margin: 12px auto;
   margin-bottom: 0;
 }
