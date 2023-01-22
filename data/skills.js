@@ -1,26 +1,26 @@
 export const skills = [
   {
-    key: "Programming",
-    value: "Java, Python, C#, HTML, CSS, JavaScript, SQL."
+    name: "Programming",
+    tags: ["Java", "Python", "C#", "HTML", "CSS", "JavaScript", "SQL"]
   },
   {
-    key: "Frontend",
-    value: "ReactJs, NextJs, HTML5, JSP, Thymeleaf, Bootstrap, AMP."
+    name: "Frontend",
+    tags: ["ReactJs", "NextJs", "HTML5", "JSP", "Thymeleaf", "Bootstrap", "AMP"]
   },
   {
-    key: "Backend",
-    value: "Spring Boot, Gradle, Maven, Apache Struts, Rest API."
+    name: "Backend",
+    tags: ["Spring Boot", "Gradle", "Maven", "Apache Struts", "Rest API"]
   },
   {
-    key: "Data",
-    value: "PostgreSql, MySql, MongoDB, Memcache, Redis, Elastic Search."
+    name: "Data",
+    tags: ["PostgreSql", "MySql", "MongoDB", "Memcache", "Redis", "Elastic Search"]
   },
   {
-    key: "DevOps",
-    value: "AWS, GCP, Kubernetes, Docker, Jenkins, Apache, Tomcat, Nginx."
+    name: "DevOps",
+    tags: ["AWS", "GCP", "Kubernetes", "Docker", "Jenkins", "Apache", "Tomcat", "Nginx"]
   },
   {
-    key: "Languages",
-    value: "English (native), Japanese (conversational), Portuguese (native), Spanish (conversational)."
+    name: "Languages",
+    tags: ["English (native)", "Japanese (conversational)", "Portuguese (native)", "Spanish (conversational)"]
   }
 ]

@@ -94,9 +94,15 @@ export default function Home() {
                   <h2>Skills</h2>
                   <ul>
                     {skills.map((item) => (
-                      <li key={item.key}>
-                        <span style={{fontWeight: 'bold'}}>{item.key}: </span>
-                        <span>{item.value}</span>
+                      <li key={item.name}>
+                        <span style={{fontWeight: 'bold'}}>{item.name}: </span>
+                        {item.tags.map((tag) => (
+                          <span key={item.name + "_" + tag} className="tag">
+                            <Bounce delay={100}>
+                              {tag}
+                            </Bounce>
+                          </span>
+                        ))}
                       </li>
                     ))}
                   </ul>

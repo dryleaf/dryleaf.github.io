@@ -40,6 +40,9 @@ body,
   --tag-color: #0366d6;
   --tag-hover-color: #fff;
   --tag-opacity: 1;
+  --tag-custom-bg: #f1f8ff;
+  --tag-custom-color: #1c283b;
+  --tag-custom-opacity: 1;
   --info-text: rgb(46 48 47 / 77%);
   --quote-bg:#efefef;
   --quote-shadow: 0 1px 1px rgba(255,255,255,0.5);
@@ -65,6 +68,9 @@ body,
   --tag-color: rgb(156 195 219);
   --tag-hover-color: rgb(205 225 238);
   --tag-opacity: 0.5;
+  --tag-custom-bg: rgba(56, 139, 253, 0.15);
+  --tag-custom-color: #e5e8eb;
+  --tag-custom-opacity: 0.5;
   --info-text: rgb(222 222 222 / 77%);
   --quote-bg:#343434;
   --quote-shadow:none;
@@ -252,6 +258,15 @@ Home Page
 .interests ul li,
 .projects ul li {
   margin-bottom: 10px;
+}
+.projects li .tag,
+.skills li .tag {
+  margin: 0;
+  border-radius: 1em;
+  padding: 0 5px;
+  color: var(--tag-custom-color);
+  background-color: var(--tag-custom-bg);
+  opacity: var(--tag-custom-opacity);
 }
 .projects ul li ul {
   list-style-type: none;
