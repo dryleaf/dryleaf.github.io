@@ -21,6 +21,6 @@ export const skills = [
   },
   {
     name: "Languages",
-    tags: ["English (native)", "Japanese (conversational)", "Portuguese (native)", "Spanish (conversational)"]
+    tags: ["English ↑", "Portuguese ↑", "Japanese ±", "Spanish ±"]
   }
 ]
