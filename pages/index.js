@@ -128,7 +128,6 @@ export default function Home() {
                         <span>{item.description}</span>
                         <ul>
                           <li>
-                            <span>Stack: </span>
                             {item.tags.map((tag) => (
                               <span key={item.name + "_" + tag} className="tag">
                                 <Bounce delay={100}>

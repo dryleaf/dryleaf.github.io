@@ -254,7 +254,8 @@ Home Page
   margin-bottom: 10px;
 }
 .projects ul li ul {
-  padding-left: 14px;
+  list-style-type: none;
+  padding-left: 0;
 }
 .section-title {
   text-align: center;
