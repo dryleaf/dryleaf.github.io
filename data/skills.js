@@ -17,7 +17,11 @@ export const skills = [
   },
   {
     name: "DevOps",
-    tags: ["AWS", "GCP", "Kubernetes", "Docker", "Jenkins", "Apache", "Tomcat", "Nginx"]
+    tags: ["AWS", "GCP", "Kubernetes", "Docker", "Jenkins", "Tomcat", "Nginx"]
+  },
+  {
+    name: "Telecom",
+    tags: ["3GPP", "xDSL", "GPon", "WCDMA", "LTE", "NR", "5G", "Cloud RAN"]
   },
   {
     name: "Languages",
