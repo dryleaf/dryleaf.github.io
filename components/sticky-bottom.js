@@ -20,7 +20,7 @@ const StickyBottom = () => (
         background: transparent;
         bottom: 0;
         cursor: pointer;
-        display: block;
+        display: none;
         height: 90px;
         margin: 0 auto;
         padding: 0;
