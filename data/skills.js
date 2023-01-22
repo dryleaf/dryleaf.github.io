@@ -4,20 +4,20 @@ export const skills = [
     value: "Java, Python, C#, HTML, CSS, JavaScript, SQL."
   },
   {
-    key: "Front-end",
+    key: "Frontend",
     value: "ReactJs, NextJs, HTML5, JSP, Thymeleaf, Bootstrap, AMP."
   },
   {
-    key: "Back-end",
-    value: "Spring Boot, Apache, Tomcat, Apache Struts, Rest API."
+    key: "Backend",
+    value: "Spring Boot, Gradle, Maven, Apache Struts, Rest API."
   },
   {
     key: "Data",
-    value: "PostgreSql, MySql, mongoDB, Memcache, Redis, Elastic Search."
+    value: "PostgreSql, MySql, MongoDB, Memcache, Redis, Elastic Search."
   },
   {
     key: "DevOps",
-    value: "AWS, GCP, Kubernetes, Docker, Jenkins, Apache, Tomcat, nginx."
+    value: "AWS, GCP, Kubernetes, Docker, Jenkins, Apache, Tomcat, Nginx."
   },
   {
     key: "Languages",

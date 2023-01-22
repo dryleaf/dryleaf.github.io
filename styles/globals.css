@@ -163,7 +163,7 @@ Home Page
 }
 .info {
   padding: 12px 5px;
-  color: var(--color);
+  /*color: var(--color);*/
   font-weight: 300;
 }
 
@@ -175,14 +175,20 @@ Home Page
 .row {
   display: flex;
 }
+.col-inline {
+  display: inline-grid;
+}
+.col-inline h3 {
+  margin: 10px 0 0 0;
+}
 .col {
   flex: 0 50%;
 }
 .col-1 {
-  flex: 0 40%;
+  flex: 0 50%;
 }
 .col-2 {
-  flex: 0 60%;
+  flex: 0 50%;
 }
 .intro {
   font-style: italic;
@@ -191,15 +197,76 @@ Home Page
   width: 100%;
 }
 .container .experience {
+  line-height: 30px;
   list-style: inherit;
   margin: inherit;
   padding: 0 0 0 40px;
 }
-.projects {
+.github-fun,
+.highlights,
+.github {
   display: flex;
   flex-flow: wrap;
   overflow-y: inherit;
   height: inherit;
+}
+.github-fun {
+  display: inline-block;
+  overflow-x: auto;
+}
+.github-fun > div {
+  display: inline-flex;
+  overflow-x: auto;
+}
+.github-fun a {
+  width: 252px;
+  display: flex;
+  height: 245px;
+}
+.info,
+.experience,
+.highlights,
+.skills,
+.interests,
+.projects {
+  max-width: 540px;
+}
+.highlights h2,
+.skills h2,
+.interests p,
+.projects h3 {
+  margin-bottom: 0;
+  padding-left: 24px;
+}
+.highlights ul,
+.skills ul,
+.interests ul,
+.projects ul {
+  line-height: 24px;
+}
+.skills ul {
+  list-style-type: none;
+}
+.highlights ul li,
+.skills ul li,
+.interests ul li,
+.projects ul li {
+  margin-bottom: 10px;
+}
+.projects ul li ul {
+  padding-left: 14px;
+}
+.section-title {
+  text-align: center;
+}
+.contact-me {
+  color: #0a66c2;
+  flex: auto;
+  text-align: center;
+  text-decoration: underline;
+}
+.tldr {
+  margin: 100px 0 20px 0;
 }
 .card {
   padding: 1em;
@@ -269,7 +336,7 @@ Home Page
   .col-2 {
     flex: 0 100%;
   }
-  .projects {
+  .github {
     height: auto !important;
   }
   .card {
