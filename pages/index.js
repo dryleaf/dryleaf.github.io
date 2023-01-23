@@ -151,10 +151,12 @@ export default function Home() {
             </div>
               <h1 className="section-title">Contact me</h1>
               <div className="row">
-                <a className="contact-me" href="https://www.linkedin.com/in/lopesjosimar" target="_blank">
-                  <span style={{paddingRight: '2px'}}>https://linkedin.com/in/lopesjosimar</span>
-                  <i className="fa fa-linkedin-square" aria-hidden="true" title="linkedin logo"></i>
-                </a>
+                <div className="contact">
+                  <a className="contact-me" href="https://www.linkedin.com/in/lopesjosimar" target="_blank">
+                    <span style={{paddingRight: '2px'}}>https://linkedin.com/in/lopesjosimar</span>
+                    <i className="fa fa-linkedin-square" aria-hidden="true" title="linkedin logo"></i>
+                  </a>
+                </div>
               </div>
               <h1 className="tldr">TLDR;</h1>
             <div className="row">
