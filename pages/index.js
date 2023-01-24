@@ -158,7 +158,7 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <h1 className="tldr">TLDR;</h1>
+              <h1 className="tldr">TL;DR</h1>
             <div className="row">
               <div className="col-inline">
                 <h3>Coding for fun</h3>

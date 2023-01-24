@@ -9,6 +9,6 @@ export const interests = [
   },
   {
     key: "Outdoor Activities",
-    value: "I love nature. Japan has a mountainous landscape. During free times, I enjoy hiking mountains, going on road trips, and taking photos of different seasons. Occasionally, I play basketball on weekends with office colleagues."
+    value: "I love nature. Japan has a mountainous landscape. In my free times, I enjoy hiking mountains, going on road trips, and taking photos of different seasons. Occasionally, I play basketball on weekends with office colleagues."
   }
 ]

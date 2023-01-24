@@ -149,6 +149,7 @@ Home Page
 **/
 
 .profile-image img {
+  border-radius: 8px;
   margin: 0 auto;
   max-height: 323px;
   opacity: 1;
