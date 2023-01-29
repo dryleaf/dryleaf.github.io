@@ -28,10 +28,10 @@ export default function Home() {
               <div className="col-1">
                 <div className="profile-image">
                   <Image
-                    src={cdnImage("josimar-profile-3.jpg", false, "")}
+                    src={cdnImage("josimar-profile-4.jpg", false, "")}
                     alt="Photo of Josimar Lopes"
-                    width={280}
-                    height={323} />
+                    width={270}
+                    height={270} />
                 </div>
                 <div className="icons">
                   <Bounce delay={100}>
