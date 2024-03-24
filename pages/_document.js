@@ -33,6 +33,7 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="8CYV4Oyz865mIuy-fi8ERPZBOxhznQKaKWCn9CDcgPE"
           />
+          <meta name="google-adsense-account" content="ca-pub-1325330735397854" />
         </Head>
         <body>
           <Main />
